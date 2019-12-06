@@ -5,8 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    usuario: false,
+    plantilla: false
   },
   mutations: {
+    generaPlantilla(state, plantilla) {
+      state.plantilla = plantilla;
+    },
+    logearUsuario(state){
+      state.usuario = true;
+    }
   },
   actions: {
   },
