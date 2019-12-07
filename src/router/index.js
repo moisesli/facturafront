@@ -20,7 +20,15 @@ const routes = [
     name: 'home',
     component: Home,
     meta: {
-      nologeado: true
+      nologeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
     }
   },
   {
@@ -28,7 +36,15 @@ const routes = [
     name: 'login',
     component: Login,
     meta: {
-      nologeado: true
+      nologeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
     }
   },
   {
@@ -36,7 +52,15 @@ const routes = [
     name: 'registro',
     component: Registro,
     meta: {
-      nologeado: true
+      nologeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
     }
   },
   {
@@ -44,7 +68,15 @@ const routes = [
     name: 'admin',
     component: Admin,
     meta: {
-      logeado: true
+      logeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
     }
   },
   // {

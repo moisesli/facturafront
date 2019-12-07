@@ -1,9 +1,6 @@
 <template>
   <div>
 
-    <!-- Appbar -->
-    <appbar></appbar>
-
     <!-- Card -->
     <div class="container pt-5 ">
       <div class="row">
