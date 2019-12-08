@@ -14,6 +14,9 @@ export default new Vuex.Store({
     },
     logearUsuario(state){
       state.usuario = true;
+    },
+    logoutUsuario(state){
+      state.usuario = false;
     }
   },
   actions: {
