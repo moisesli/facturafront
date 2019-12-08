@@ -2,8 +2,11 @@
   <div>
 
     <div class="container pt-5 ">
+
       <div class="row ">
         <div class="col-6 mx-auto">
+
+          <b-breadcrumb :items="items"></b-breadcrumb>
 
           <!-- Card -->
           <b-card header="Entrar al Sistema">
@@ -49,6 +52,20 @@
 <script>
   import AppBar from '../shared/_navbar'
   export default {
+    data(){
+      return {
+        items: [
+          {
+            text: 'Inicio',
+            to: '/'
+          },
+          {
+            text: 'Login',
+            active: true
+          }
+        ]
+      }
+    },
     components: {
       appbar: AppBar
     }
