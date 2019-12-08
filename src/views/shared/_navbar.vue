@@ -11,9 +11,9 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item to="/"><font-awesome-icon icon="home" /> Inicio</b-nav-item>
-          <b-nav-item to="/"><font-awesome-icon icon="dollar-sign" /> Precios</b-nav-item>
-          <b-nav-item to="/"><font-awesome-icon icon="book" /> Documentacion</b-nav-item>
-          <b-nav-item to="/"><font-awesome-icon icon="address-card" /> Quienes Somos?</b-nav-item>
+          <b-nav-item to="precios"><font-awesome-icon icon="dollar-sign" /> Precios</b-nav-item>
+          <b-nav-item to="documentacion"><font-awesome-icon icon="book" /> Documentacion</b-nav-item>
+          <b-nav-item to="acerca-de"><font-awesome-icon icon="address-card" /> Quienes Somos?</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
 

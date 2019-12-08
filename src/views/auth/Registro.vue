@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import Appbar from './_navbar'
+  import Appbar from '../shared/_navbar'
 
   export default {
     components: {

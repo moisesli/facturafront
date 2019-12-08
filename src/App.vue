@@ -18,7 +18,7 @@
 
 <script>
 import store from './store'
-import Appbar from './views/auth/_navbar'
+import Appbar from './views/shared/_navbar'
 export default {
   components: {
     appbar: Appbar

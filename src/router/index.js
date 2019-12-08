@@ -3,10 +3,15 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // Componentes
-import Home from '../views/home/Home'
+import Home from '../views/web/Home'
 import Login from '../views/auth/Login'
 import Registro from '../views/auth/Registro'
 import Admin from '../views/documentos/Admin'
+
+// Web
+import Precios from '../views/web/Princing'
+import Doc from '../views/web/Doc'
+import About from '../views/web/About'
 
 // Store
 import store from '../store'
@@ -19,6 +24,54 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
+    meta: {
+      nologeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
+    }
+  },
+  {
+    path: '/precios',
+    name: 'precios',
+    component: Precios,
+    meta: {
+      nologeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
+    }
+  },
+  {
+    path: '/documentacion',
+    name: 'doc',
+    component: Doc,
+    meta: {
+      nologeado: true,
+      progress: {
+        func: [
+          {call: 'color', modifier: 'temp', argument: '#007fe2'},
+          {call: 'fail', modifier: 'temp', argument: '#6e0000'},
+          {call: 'location', modifier: 'temp', argument: 'top'},
+          {call: 'transition', modifier: 'temp', argument: {speed: '1.5s', opacity: '0.6s', termination: 400}}
+        ]
+      }
+    }
+  },
+  {
+    path: '/acerca-de',
+    name: 'about',
+    component: About,
     meta: {
       nologeado: true,
       progress: {
