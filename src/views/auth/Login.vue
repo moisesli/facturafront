@@ -52,6 +52,7 @@
 <script>
   import AppBar from '../shared/_navbar'
   import store from '../../store'
+  import router from "../../router";
   const axios = require('axios').default;
   export default {
     data(){
@@ -76,7 +77,8 @@
         axios.get('backend/login.json').then(res => {
           if (!!res.data.login == true){
             store.commit('logearUsuario')
-            console.log(store.state.usuario)            
+            this.$router.push('Admin')
+            console.log(store.state.usuario)
           }          
         })
         // console.log('login')

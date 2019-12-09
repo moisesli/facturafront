@@ -18,7 +18,7 @@
                 <label for="input-small" class="col-form-label">RUC</label>
               </b-col>
               <b-col sm="9">
-                <b-form-input :type="text" placeholder="10425162531"></b-form-input>
+                <b-form-input type="text" placeholder="10425162531"></b-form-input>
               </b-col>
             </b-row>
 
@@ -28,7 +28,7 @@
                 <label for="input-small" class="col-form-label">Razon Social</label>
               </b-col>
               <b-col sm="9">
-                <b-form-input :type="text" placeholder="Nombre de tu Empresa"></b-form-input>
+                <b-form-input type="text" placeholder="Nombre de tu Empresa"></b-form-input>
               </b-col>
             </b-row>
 
@@ -38,7 +38,7 @@
                 <label for="input-small" class="col-form-label">Tu Email</label>
               </b-col>
               <b-col sm="9">
-                <b-form-input :type="text" placeholder="elnaufrago2009@gmail.com"></b-form-input>
+                <b-form-input type="text" placeholder="elnaufrago2009@gmail.com"></b-form-input>
               </b-col>
             </b-row>
 
@@ -48,7 +48,7 @@
                 <label for="input-small" class="col-form-label">Contrasenia</label>
               </b-col>
               <b-col sm="9">
-                <b-form-input :type="password" placeholder="**********"></b-form-input>
+                <b-form-input type="password" placeholder="**********"></b-form-input>
               </b-col>
             </b-row>
 

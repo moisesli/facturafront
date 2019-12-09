@@ -118,7 +118,7 @@ const routes = [
   },
   {
     path: '/admin',
-    name: 'admin',
+    name: 'Admin',
     component: Admin,
     meta: {
       logeado: true,
@@ -150,7 +150,7 @@ const router = new VueRouter({
 
 
 router.beforeEach((to, from, next) => {
-  var usuario = store.state.usuario;
+  let usuario = store.state.usuario;
   // let usuario = firebase.auth().currentUser;
 
   let nologeado = to.matched.some(record => record.meta.nologeado);
@@ -171,7 +171,7 @@ router.beforeEach((to, from, next) => {
     // si no esta autenticado y entra al dashboard se va a login
     next('/login')
   }
-
+  console.log(usuario)
 
 })
 

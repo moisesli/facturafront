@@ -10,8 +10,9 @@
     </template>
 
     <!-- Template Logeado -->
-    <template v-if="plantilla == 'logeado'">      
+    <template v-if="plantilla == 'logeado'">
       <router-view/>
+      <vue-progress-bar></vue-progress-bar>
     </template>
   </div>
 </template>
@@ -56,6 +57,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-</style>

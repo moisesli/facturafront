@@ -18,9 +18,38 @@
       </b-collapse>
 
       <b-navbar-nav class="ml-auto">
-        <b-nav-item to="login"><font-awesome-icon icon="user" /> Login</b-nav-item>
-        <b-nav-item to="registro"><font-awesome-icon icon="lock-open" /> Registro</b-nav-item>
+
+        <b-nav-item-dropdown v-if="usuario==true" text="demo@gmail.com" right>
+          <b-dropdown-item @click="logout" href="#">Salir</b-dropdown-item>
+        </b-nav-item-dropdown>
+
+        <b-nav-item v-if="usuario==false" to="login"><font-awesome-icon icon="user" /> Login</b-nav-item>
+        <b-nav-item v-if="usuario==false" to="registro"><font-awesome-icon icon="lock-open" /> Registro</b-nav-item>
+
+
       </b-navbar-nav>
     </b-navbar>
   </div> <!-- End AppBar-->
 </template>
+
+<script>
+  import store from '../../store'
+  export default {
+    data(){
+      return{
+
+      }
+    },
+    methods: {
+      logout: function () {
+        store.commit('logoutUsuario');
+      }
+    },
+    computed: {
+      usuario: function () {
+        return store.state.usuario;
+      }
+    }
+
+  }
+</script>
