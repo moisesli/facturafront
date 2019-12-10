@@ -18,6 +18,13 @@
         <p class="lead">
           Obligados
         </p>
+
+        <b-dropdown  no-caret right variant="link" >
+          <template v-slot:button-content>
+            1111
+          </template>
+          <b-dropdown-item href="#">An item</b-dropdown-item>
+        </b-dropdown>
       </div>
 
     </div>

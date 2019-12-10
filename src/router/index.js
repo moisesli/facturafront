@@ -118,7 +118,7 @@ const routes = [
   },
   {
     path: '/admin',
-    name: 'Admin',
+    name: 'Addmin',
     component: Admin,
     meta: {
       logeado: true,

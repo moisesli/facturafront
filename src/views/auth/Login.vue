@@ -77,7 +77,7 @@
         axios.get('backend/login.json').then(res => {
           if (!!res.data.login == true){
             store.commit('logearUsuario')
-            this.$router.push('Admin')
+            router.push('Admin')
             console.log(store.state.usuario)
           }          
         })

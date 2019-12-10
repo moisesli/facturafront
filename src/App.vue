@@ -11,6 +11,7 @@
 
     <!-- Template Logeado -->
     <template v-if="plantilla == 'logeado'">
+      <appbaradmin/>
       <router-view/>
       <vue-progress-bar></vue-progress-bar>
     </template>
@@ -20,9 +21,11 @@
 <script>
 import store from './store'
 import Appbar from './views/shared/_navbar'
+import Appbaradmin from './views/shared/_navbar_admin'
 export default {
   components: {
-    appbar: Appbar
+    appbar: Appbar,
+    appbaradmin: Appbaradmin
   },
   computed: {
     plantilla(){
